@@ -1,0 +1,30 @@
+/* 
+  Localizable.strings
+  IntuitCraftWorkz
+
+  Created by Leif Ashley on 10/19/20.
+  
+*/
+
+// App wide
+"SingleDash" = "-"; //No Data
+
+// Repo
+"Repos" = "Repos";
+"Repo Detail" = "Repo Detail";
+
+"Default Branch" = "Default Branch";
+"Has Projects" = "Has Projects";
+"Has Downloads" = "Has Downloads";
+"Has Wiki" = "Has Wiki";
+
+"Size" = "Size";
+"Stargazer Count" = "Stargazer Count";
+"Watcher Count" = "Watcher Count";
+"Fork Count" = "Fork Count";
+"Open Issues" = "Open Issues";
+
+"View Issues" = "View Issues";
+
+"Issues" = "Issues";
+"Issue Detail" = "Issue Detail";
