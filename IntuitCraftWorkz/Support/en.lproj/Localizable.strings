@@ -10,7 +10,7 @@
 "SingleDash" = "-"; //No Data
 
 // Repo
-"Repos" = "Repos";
+"Repos" = "GitHub Repos";
 "Repo Detail" = "Repo Detail";
 
 "Default Branch" = "Default Branch";

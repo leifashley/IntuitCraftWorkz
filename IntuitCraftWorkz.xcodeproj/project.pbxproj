@@ -10,6 +10,7 @@
 		935C5BDF253DFF9000DACB9B /* RepoIssuesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935C5BDE253DFF9000DACB9B /* RepoIssuesView.swift */; };
 		935C5BE4253E02DB00DACB9B /* RepoDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935C5BE3253E02DB00DACB9B /* RepoDetailHeaderView.swift */; };
 		935C5BE8253E0DD000DACB9B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 935C5BEA253E0DD000DACB9B /* Localizable.strings */; };
+		935C5BF5253E393E00DACB9B /* Fetchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935C5BF4253E393E00DACB9B /* Fetchers.swift */; };
 		93C9CAB725368B8300E39F80 /* IntuitCraftWorkzApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C9CAB625368B8300E39F80 /* IntuitCraftWorkzApp.swift */; };
 		93C9CAB925368B8300E39F80 /* RepoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C9CAB825368B8300E39F80 /* RepoListView.swift */; };
 		93C9CABB25368B8400E39F80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93C9CABA25368B8400E39F80 /* Assets.xcassets */; };
@@ -49,6 +50,7 @@
 		935C5BDE253DFF9000DACB9B /* RepoIssuesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoIssuesView.swift; sourceTree = "<group>"; };
 		935C5BE3253E02DB00DACB9B /* RepoDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetailHeaderView.swift; sourceTree = "<group>"; };
 		935C5BE9253E0DD000DACB9B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		935C5BF4253E393E00DACB9B /* Fetchers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fetchers.swift; sourceTree = "<group>"; };
 		93C9CAB325368B8300E39F80 /* IntuitCraftWorkz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntuitCraftWorkz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93C9CAB625368B8300E39F80 /* IntuitCraftWorkzApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntuitCraftWorkzApp.swift; sourceTree = "<group>"; };
 		93C9CAB825368B8300E39F80 /* RepoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListView.swift; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 		93FEC9D1253DEF6700E8ACBD /* View Model */ = {
 			isa = PBXGroup;
 			children = (
+				935C5BF4253E393E00DACB9B /* Fetchers.swift */,
 				93FEC9AF253DD96900E8ACBD /* ReposViewModel.swift */,
 			);
 			path = "View Model";
@@ -363,6 +366,7 @@
 				93FEC9B0253DD96900E8ACBD /* ReposViewModel.swift in Sources */,
 				935C5BE4253E02DB00DACB9B /* RepoDetailHeaderView.swift in Sources */,
 				93FEC9A1253DD78C00E8ACBD /* AppNetwork.swift in Sources */,
+				935C5BF5253E393E00DACB9B /* Fetchers.swift in Sources */,
 				93FEC9DE253DF78100E8ACBD /* StringExtensions.swift in Sources */,
 				93FEC9B9253DDDB100E8ACBD /* ActivityIndicatorView.swift in Sources */,
 				935C5BDF253DFF9000DACB9B /* RepoIssuesView.swift in Sources */,

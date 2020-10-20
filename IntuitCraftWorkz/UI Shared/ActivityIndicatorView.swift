@@ -19,10 +19,8 @@ struct ActivityIndicatorView: UIViewRepresentable {
     func updateUIView(_ uiView: UIActivityIndicatorView, context: Context) {
         if self.shouldAnimate {
             uiView.startAnimating()
-            logger.debug("startAnimating")
         } else {
             uiView.stopAnimating()
-            logger.debug("stopAnimating")
         }
     }
 }

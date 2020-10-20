@@ -25,10 +25,15 @@ struct RepoIssuesView: View {
             }
         }
         .navigationTitle("Issue Detail")
+        .onAppear(perform: {
+            fetcher.fetch()
+        })
             
     }
     
 }
+
+#if DEBUG
 
 struct RepoIssuesView_Previews: PreviewProvider {
     static var previews: some View {
@@ -42,3 +47,5 @@ struct RepoIssuesView_Previews: PreviewProvider {
         RepoIssuesView(fetcher: IssuesFetcher(repo: repo, issues: issues))
     }
 }
+
+#endif

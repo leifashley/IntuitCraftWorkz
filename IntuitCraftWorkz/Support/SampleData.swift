@@ -12,7 +12,9 @@ import Foundation
 func sampleRepos() -> Array<RepoViewModel> {
     var repos = [RepoViewModel]()
     
-    repos.append(sampleRepo(id: 123, name: "Name1", description: "Desc1"))
+    repos.append(sampleRepo(id: 1, name: "Name1", description: "Desc1"))
+    repos.append(sampleRepo(id: 2, name: "Name2", description: "Desc2"))
+    repos.append(sampleRepo(id: 3, name: "Name3", description: "Desc3"))
     
     return repos
 }

@@ -18,7 +18,7 @@ struct RepoListView: View {
                         RepoCell(repo: repo)
                     }
                 }
-                .navigationBarTitle("Repos")                
+                .navigationBarTitle("Repos")
             }
             .disabled(fetcher.isFetching)
             .blur(radius: fetcher.isFetching ? 3 : 0)
@@ -33,7 +33,7 @@ struct RepoCell: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text("\(repo.name)")
+            Text("\(repo.name)").font(.title3)
             Text("\(repo.description)")
                 .font(.footnote)
                 .lineLimit(2)
