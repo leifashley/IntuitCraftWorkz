@@ -50,9 +50,14 @@ public class IssuesFetcher: ObservableObject {
     
     func fetch() {
         isFetching = true
-        let datasource = GitHubDatasource()
         
-        datasource.fetchIssues(from: repoVM.repo) { (issues) in
+        guard let repo = repoVM.repo else {
+            isFetching = false
+            return
+        }
+        
+        let datasource = GitHubDatasource()
+        datasource.fetchIssues(from: repo) { (issues) in
             self.isFetching = false
             
             var itemsVM: Array<RepoIssueViewModel> = []

@@ -45,7 +45,7 @@ extension ViewModel {
 
 class RepoViewModel: ViewModel, Identifiable {
     public let id = UUID()
-    let repo: Repo
+    let repo: Repo?
     
     public static func convertArrayToViewModel(from: Array<Repo>) -> Array<RepoViewModel> {
         var result = Array<RepoViewModel>()
@@ -58,41 +58,41 @@ class RepoViewModel: ViewModel, Identifiable {
     }
     
     var repoId: String {
-        return numToView(value: repo.id)
+        return numToView(value: repo?.id)
     }
     
     var name: String {
-        return stringToView(value: repo.name)
+        return stringToView(value: repo?.name)
     }
     
     var description: String {
-        return stringToView(value: repo.description)
+        return stringToView(value: repo?.description)
     }
     
     
     var size: String {
-        return numToView(value: repo.size)
+        return numToView(value: repo?.size)
     }
     
     var starGazersCount: String {
-        return numToView(value: repo.stargazers_count)
+        return numToView(value: repo?.stargazers_count)
     }
     
     var watchersCount: String {
-        return numToView(value: repo.watchers_count)
+        return numToView(value: repo?.watchers_count)
     }
     
     var forksCount: String {
-        return numToView(value: repo.forks_count)
+        return numToView(value: repo?.forks_count)
     }
     
     var openIssuesCount: String {
-        return numToView(value: repo.open_issues_count)
+        return numToView(value: repo?.open_issues_count)
     }
     
     var hasOpenIssues: Bool {
         var result = false
-        if let count = repo.open_issues_count {
+        if let count = repo?.open_issues_count {
             result = count > 0
         }
         
@@ -100,26 +100,26 @@ class RepoViewModel: ViewModel, Identifiable {
     }
     
     var defaultBranch: String {
-        return stringToView(value: repo.default_branch)
+        return stringToView(value: repo?.default_branch)
     }
     
     var hasProjects: String {
-        return boolToView(value: repo.has_projects)
+        return boolToView(value: repo?.has_projects)
     }
     
     var hasDownloads: String {
-        return boolToView(value: repo.has_downloads)
+        return boolToView(value: repo?.has_downloads)
     }
     
     var hasWiki: String {
-        return boolToView(value: repo.has_wiki)
+        return boolToView(value: repo?.has_wiki)
     }
     
     var issuesUrl: String? {
-        return repo.issues_url
+        return repo?.issues_url
     }
     
-    init(repo: Repo) {
+    init(repo: Repo? = nil) {
         self.repo = repo
     }
 }

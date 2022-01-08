@@ -12,19 +12,22 @@ struct RepoListView: View {
         
     var body: some View {
         ZStack(alignment: .center) {
-            NavigationView {
-                List(fetcher.repos) { repo in                    
-                    NavigationLink(destination: RepoDetailView(repo: repo)) {
-                        RepoCell(repo: repo)
-                    }
+            VStack {
+                NavigationView {
+                    List(fetcher.repos) { repo in
+                        NavigationLink(destination: RepoDetailView(repo: repo)) {
+                            RepoCell(repo: repo)
+                        }
+                    }.navigationTitle("Intuit GitHub")
                 }
-                .navigationBarTitle("Repos")
+                .navigationViewStyle(.stack)
+                .disabled(fetcher.isFetching)
+                .blur(radius: fetcher.isFetching ? 3 : 0)
             }
-            .disabled(fetcher.isFetching)
-            .blur(radius: fetcher.isFetching ? 3 : 0)
             
             LoadingDataView(isLoading: $fetcher.isFetching)
         }
+        
     }
 }
 
